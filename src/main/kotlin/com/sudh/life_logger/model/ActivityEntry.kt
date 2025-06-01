@@ -4,10 +4,11 @@ import jakarta.persistence.*
 import java.time.LocalDateTime
 
 @Entity
-data class MoodEntry(
+data class ActivityEntry(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id : Long = 0,
-    val moodLevel: Int,
-    val timestamp: LocalDateTime = LocalDateTime.now(),
-    val note: String? = null,
+    val id: Long = 0,
+
+    val activityType: String,
+    val durationMinutes: Int,
+    val timestamp: LocalDateTime
 )

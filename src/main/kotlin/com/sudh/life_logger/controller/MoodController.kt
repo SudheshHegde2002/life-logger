@@ -1,7 +1,7 @@
-package com.sudh.lifelogger.controller
+package com.sudh.life_logger.controller
 
-import com.sudh.lifelogger.model.MoodEntry
-import com.sudh.lifelogger.repository.MoodRepository
+import com.sudh.life_logger.model.MoodEntry
+import com.sudh.life_logger.repository.MoodRepository
 import org.springframework.web.bind.annotation.*
 
 @RestController
